@@ -1,8 +1,8 @@
-
+import { Hero } from "@/components/shared/Hero/Hero";
 export default function Home() {
   return (
     <div>
-      <h2>Hello world</h2>
+      <Hero />
     </div>
   );
 }
