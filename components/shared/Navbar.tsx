@@ -82,7 +82,7 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "100%", opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="md:hidden absolute top-0 left-0 w-full bg-gray-800 text-secondary p-4 space-y-4 h-svh flex flex-col items-start justify-center gap-8"
+            className="md:hidden absolute top-0 left-0 w-full bg-gray-800 text-secondary dark:text-white p-4 space-y-4 h-svh flex flex-col items-start justify-center gap-8"
           >
             <button
               onClick={closeMenu}
