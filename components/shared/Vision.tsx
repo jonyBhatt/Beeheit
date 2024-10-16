@@ -39,7 +39,7 @@ const VisionSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0 px-6 mt-8">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center sm:items-start lg:items-center justify-between space-y-8 lg:space-y-0 px-6 mt-8">
         <div className="flex flex-col items-center gap-2.5">
           <Image
             src="/icons/cashback.gif"
