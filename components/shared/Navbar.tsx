@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../ui/button";
 import { AlignRight, X } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,15 @@ const Navbar = () => {
     <nav className="  p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold">
-          <a href="#">Logo</a>
+        <div className="flex items-center gap-1">
+          <Image
+            src="/image/BEEHIT.jpg"
+            alt="logo"
+            width={50}
+            height={50}
+            className="rounded-full object-cover"
+          />
+          <h2 className="text-lg font-bold">Beeheit</h2>
         </div>
 
         {/* Hamburger Icon */}
