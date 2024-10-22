@@ -83,56 +83,68 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ y: "-100%", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: "100%", opacity: 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-          >
-            <button
-              onClick={closeMenu}
-              className="absolute top-4 right-4 text-white focus:outline-none"
-            >
-              <X className="text-primary font-bold" size={25} />
-            </button>
-            <Link
-              href="#"
-              className="block hover:text-primary duration-300 transition-all ease-in-out"
-            >
-              Home
-            </Link>
-            <Link
-              href="#"
-              className="block hover:text-primary duration-300 transition-all ease-in-out"
-            >
-              What We Do
-            </Link>
-            <Link
-              href="#"
-              className="block hover:text-primary duration-300 transition-all ease-in-out"
-            >
-              Our Approach
-            </Link>
-            <Link
-              href="#"
-              className="block hover:text-primary duration-300 transition-all ease-in-out"
-            >
-              Insights
-            </Link>
-            <Link
-              href="#"
-              className="block hover:text-primary duration-300 transition-all ease-in-out"
-            >
-              About
-            </Link>
-            <Button size={"lg"} className="font-semibold text-lg">
-              Let&apos;s Talk
-            </Button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isOpen && (
+        <div className="md:hidden absolute top-0 left-0 w-full bg-gray-800 text-secondary dark:text-white p-4 space-y-4 h-svh ">
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ y: "-100%", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: "100%", opacity: 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "start",
+                  gap: "2rem",
+                  justifyContent: "center",
+                  minHeight: "100svh",
+                }}
+              >
+                <button
+                  onClick={closeMenu}
+                  className="absolute top-4 right-4 text-white focus:outline-none"
+                >
+                  <X className="text-primary font-bold" size={25} />
+                </button>
+                <Link
+                  href="#"
+                  className="block hover:text-primary duration-300 transition-all ease-in-out"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="#"
+                  className="block hover:text-primary duration-300 transition-all ease-in-out"
+                >
+                  What We Do
+                </Link>
+                <Link
+                  href="#"
+                  className="block hover:text-primary duration-300 transition-all ease-in-out"
+                >
+                  Our Approach
+                </Link>
+                <Link
+                  href="#"
+                  className="block hover:text-primary duration-300 transition-all ease-in-out"
+                >
+                  Insights
+                </Link>
+                <Link
+                  href="#"
+                  className="block hover:text-primary duration-300 transition-all ease-in-out"
+                >
+                  About
+                </Link>
+                <Button size={"lg"} className="font-semibold text-lg">
+                  Let&apos;s Talk
+                </Button>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      )}
     </nav>
   );
 };
@@ -143,7 +155,6 @@ export default Navbar;
  *
  * md:hidden absolute top-0 left-0 w-full bg-gray-800  p-4 space-y-4
  */
-
 
 /**
  *  className="md:hidden absolute top-0 left-0 w-full bg-gray-800 text-secondary dark:text-white p-4 space-y-4 h-svh flex flex-col items-start justify-center gap-8"
