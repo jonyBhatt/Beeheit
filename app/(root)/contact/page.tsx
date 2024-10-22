@@ -60,7 +60,7 @@ function Contact() {
           </div>
         </div>
         {/** Right Section */}
-        <div className="bg-orange-50 px-8 py-8  rounded flex flex-col gap-6 min-h-svh  ">
+        <div className="bg-orange-50 dark:bg-black px-8 py-8  rounded flex flex-col gap-6 min-h-svh  ">
           <div className="flex flex-col w-full gap-4 dark:text-white">
             <h2 className="font-semibold text-3xl sm:text-4xl   text-center md:text-left dark:text-white">
               Got ideas? We&apos;ve got <br /> the skills. Let&apos;s team up.
