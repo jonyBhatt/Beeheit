@@ -76,9 +76,11 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Button size={"lg"} className="font-semibold text-lg">
-            Let&apos;s Talk
-          </Button>
+          <Link href="/contact">
+            <Button size={"lg"} className="font-semibold text-lg">
+              Let&apos;s Talk
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -137,9 +139,11 @@ const Navbar = () => {
                 >
                   About
                 </Link>
-                <Button size={"lg"} className="font-semibold text-lg">
-                  Let&apos;s Talk
-                </Button>
+                <Link href="/contact">
+                  <Button size={"lg"} className="font-semibold text-lg">
+                    Let&apos;s Talk
+                  </Button>
+                </Link>
               </motion.div>
             )}
           </AnimatePresence>
