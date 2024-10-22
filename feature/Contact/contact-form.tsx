@@ -36,7 +36,7 @@ export const ContactForm = () => {
     console.log(values);
   }
   return (
-    <div className="w-full">
+    <div className="w-full dark:text-white">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
