@@ -11,7 +11,7 @@ export default function MainLayout({
   return (
     <div className="flex flex-col min-h-svh w-full ">
       {/* <Navbar /> */}
-      <main className="flex-grow h-full">
+      <main className="flex flex-col min-h-svh h-full justify-center items-center">
         <h1 className="text-center font-bold text-4xl">Coming Soon...</h1>
       </main>
       {/* <Footer /> */}
