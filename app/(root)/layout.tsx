@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// import Footer from "@/components/shared/Footer";
-// import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
 import React from "react";
 
 export default function MainLayout({
@@ -10,11 +10,11 @@ export default function MainLayout({
 }>) {
   return (
     <div className="flex flex-col min-h-svh w-full ">
-      {/* <Navbar /> */}
+      <Navbar />
       <main className="flex flex-col min-h-svh h-full justify-center items-center">
-        <h1 className="text-center font-bold text-4xl">Coming Soon...</h1>
+       {children}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
